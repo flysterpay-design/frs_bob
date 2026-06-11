@@ -1,0 +1,107 @@
+name: Bug report
+description: Create a report to help us improve OasisBot
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thanks for taking the time to fill out this bug report!
+        Please fill out the form as completely as possible.
+  - type: input
+    id: OasisBot-version
+    attributes:
+      label: OasisBot Version
+      description: What version or commit of OasisBot are you using?
+      placeholder: e.g. v2.3 or commit 7747746
+    validations:
+      required: true
+  - type: dropdown
+    id: sro-region
+    attributes:
+      label: SRO Client Region
+      description: Which Silkroad region/version are you playing on?
+      options:
+        - iSRO (International)
+        - TRSRO (Turkey)
+        - vSRO (Vietnam - Private)
+        - KSRO (Korean)
+        - RuSro (Russia)
+        - JSRO (Japanese)
+        - cSRO (Chinese)
+        - TSRO (Taiwan)
+        - Other (mention in context)
+    validations:
+      required: true
+  - type: input
+    id: sro-version-tag
+    attributes:
+      label: SRO Client Version
+      description: e.g. v1.188, v1.193, Blackrogue
+      placeholder: v1.188
+  - type: input
+    id: os-version
+    attributes:
+      label: Operating System
+      description: e.g. Windows 10, Windows 11
+      placeholder: Windows 11
+    validations:
+      required: true
+  - type: checkboxes
+    id: affected-components
+    attributes:
+      label: Affected Components
+      description: Select the parts of the bot that are having issues.
+      options:
+        - label: OasisBot (Main Application)
+        - label: Alchemy
+        - label: Lure
+        - label: Trade
+        - label: Training
+        - label: Inventory / Items
+        - label: Map / Navigation
+        - label: Party
+        - label: Protection / Skills / Quests
+        - label: SDUI (User Interface)
+        - label: Core / FileSystem
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Reproduction Steps
+      description: How do we reproduce the bug?
+      placeholder: |
+        1. Go to...
+        2. Start the bot...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Behavior
+      description: What did you expect and what actually happened?
+      placeholder: |
+        **Expected Behavior:**
+        The bot should...
+
+        **Actual Behavior:**
+        Instead, it...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs (Optional)
+      description: Please paste relevant log output from the bot's console or log file.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      description: Check these before submitting.
+      options:
+        - label: I have searched the existing issues for similar bugs.
+          required: true
+        - label: I have joined the Discord and asked for help there first.
+          required: false

@@ -1,0 +1,51 @@
+name: Feature request
+description: Suggest an idea or a feature for OasisBot
+title: "[Feature Request]: "
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Have an idea for OasisBot? We'd love to hear it!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+    validations:
+      required: true
+  - type: textarea
+    id: contribution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+  - type: checkboxes
+    id: affected-components
+    attributes:
+      label: Affected Components
+      description: Which parts of the bot would this feature affect?
+      options:
+        - label: OasisBot (Main Application)
+        - label: Alchemy
+        - label: Lure
+        - label: Trade
+        - label: Training
+        - label: Inventory / Items
+        - label: Map / Navigation
+        - label: Party
+        - label: Protection / Skills / Quests
+        - label: SDUI (User Interface)
+        - label: Core / FileSystem
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context or screenshots about the feature request here.

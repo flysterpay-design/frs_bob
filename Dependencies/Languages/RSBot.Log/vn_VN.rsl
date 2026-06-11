@@ -1,0 +1,7 @@
+DisplayName="Log"
+RSBot.Log.Main.Panel.checkNormal="Bình thường"
+RSBot.Log.Main.Panel.checkError="Lỗi"
+RSBot.Log.Main.Panel.checkWarning="Cảnh báo"
+RSBot.Log.Main.Panel.checkDebug="Gỡ lỗi"
+RSBot.Log.Main.Panel.btnReset="Thông thoáng"
+RSBot.Log.Main.Panel.checkEnabled="Đã bật"
